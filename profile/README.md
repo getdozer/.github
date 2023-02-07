@@ -2,48 +2,78 @@
 
 ## 📚 Overview
 
-Dozer is an open-source platform that allows developers to quickly and easily build, publish, and manage high-performance data APIs. It aims to enhance developer productivity by providing a streamlined process for generating APIs automatically, connecting to a wide range of data sources, and transforming data on the fly.
+Dozer instantly deploys blazing-fast data APIs by extending your data stores with search, analytical and real-time functionality. 
 
+At Dozer, we believe developers spend many valuable hours building core plumbing and infrastructure work and often integrate several products. We take an opinionated approach to solving data serving problems with a single product that offers end-to-end functionality all the way from the data sources to producing data APIs. 
+
+Dozer connects to your data sources, incrementally builds up the cache in real-time and provides high-performance APIs. Dozer takes an end-to-end approach, aiming to drastically lower the cost, complexity and effort involved in putting together the data infrastructure necessary to build data applications. Today developers have to integrate and maintain a variety of tools to achieve the same result. 
+
+Dozer maintains the data in a caching layer built on LMDB (Lightning Memory-Mapped Database) so users can immediately and efficiently query data in the form of gRPC and REST APIs. Dozer publishes data contracts and API documentation out of the box for the best developer experience. 
 
 ![Dozer Architecture](https://getdozer.io/img/dozer-binary.svg)
 
 Checkout our [Documentation](https://getdozer.io/docs/dozer) for more information.
 
-### Configurability
-Dozer uses a YAML configuration file to define the connectors, sources, endpoints and settings of the API, such as authentication, caching, and security. This configuration file is simple and easy to use, making it easy for developers to understand and modify. Dozer automatically generates the API based on the configuration in both REST and gRPC formats, along with documentation in both OpenAPI and protobuf formats. This streamlined process saves a lot of development time and helps to ensure that the generated APIs are fast, reliable, and easy to use.
+##  What can you do with Dozer
+
+- Create **blazing fast** end to end APIs in minutes with a simple configuration.
+- Build and rapidly iterate on customer facing data apps.
+- Transform your data in real-time using standard SQL. 
+- Cache your data and get search and filter functionality out of the box.
+- Extend Dozer with **custom connectors, operators and Api transformations** using **WASM**.
+- Built with **Rust** with performance and extensibility in mind.
+- OpenAPI documentation and protobuf-based data contracts are auto-generated.
 
 
-### Connectivity
-Dozer allows for easy connectivity to several data sources, including traditional databases such as Postgres, Data warehouses such as Snowflake, as well as non-relational sources like blockchain and real-time events. This allows developers to access and combine data to create rich APIs purely through configuration. 
+Read more about [Dozer here](https://getdozer.io/docs/dozer)
 
-
-
-### Performance
-Dozer uses a caching layer built on LMDB (Lightning Memory-Mapped Database) to improve performance. LMDB is a high-performance, embedded key-value store that allows for extremely fast data access even when working with large datasets. Additionally, Dozer supports various secondary indexes which further enhance performance.
-
-Dozer implements a real-time streaming SQL layer that can transform data in real-time. Dozer supports commonly used SQL functionalities such as selection, aggregation, joins etc. 
-
+Detailed [Architecture can be found here](https:///getdozer.io/docs/dozer/architecture). 
 
 ## Features
 
-- **Connect your sources**
-    - Import real time data from Postgres as CDC, Snowflake Table Stream etc.
-    - Create your own connector using Rust
-    - Automatic schema evolution and validation
-- **Transform in REAL-TIME**
-    - Use SQL to perform joins, aggregations and filter operations in real time across sources.
-    - Use it like an ORM; Map relational data to object entities using Dozer SQL extensions
-    - Build custom functions for aggregation, selection etc. using WASM
-- **Optimize for serving**
-    - Define indices with a simple configuration
-    - Support for multiple indices such as Inverted, Full Text, Compound, Geo (Coming soon!) etc.
-    - Apply filter and sort operations on cached data
-    - Support for Push and Pull queries
-- **Publish blazing fast APIs**
-    - gRPC and REST APIs automatically generated
-    - Protobuf an Open API documentation
-    - TypeSafe APIs
-    - Realtime Streaming
+**Plug & Play**
+
+Dozer instantly generates fully indexed gRPC and REST APIs automatically. All you need is to configure a YAML file with your data source configuration and the APIs you want to deploy. As simple as that. There is no need to write any additional code saving several developer hours. Dozer is very much customizable. You can refer to your [Contributing](https://getdozer.io/docs/contributing/overview) section for more information on building more connectors as well as transformations. 
+
+
+**Connect to all sources**
+
+Dozer doesn't make a distinction between types of data sources. Developers can get a seamless experience building products with application databases such as Postgres and MySQL, data warehouses such as SnowFlake and cloud storage such as S3 and Deltalake. Dozer can also consume real-time events and Ethereum data. 
+
+**Combine data from multiple sources**
+
+Dozer can in real-time join data coming from multiple data sources powering advanced use cases such as customer personalization, real-time analytics etc. This can be done using the standard JOIN operator in SQL.
+
+**APIs & Real-time queries**
+
+At the heart of the implementation, Dozer has a streaming data pipeline that works on CDC across all stores. As new data flows in, Dozer incrementally computes aggregations and joins, and offers a far superior query experience than a traditional database for these scenarios. 
+
+Data is stored in a cache built on LMDB (Lightning Memory-Mapped Database) and secondary indexes for single columns are automatically built. This gives users instant queryable APIs with operations such as filter, sort, and order_by functionality. 
+
+**Scaling**
+
+Dozer can be run as a single process for simple applications or can be run in a distributed fashion where writing and reading are de-coupled. This is a cost-effective approach where reading has a very low overhead and can be scaled on demand.
+
+
+**Authorization**
+
+Dozer offers authorization functionality through JWT tokens. Refer to [API Security](https://getdozer.io/docs/reference/api/security) for more details.
+
+## Comparision
+Dozer takes an opinionated and horizontal approach that cuts across different categories. In Dozer, you would find modules and functionalities comparable to streaming databases, caches, search engines and API generation tools.
+
+You can find comparision [documented here](https://getdozer.io/docs/dozer/comparision)
+
+
+## Releases
+We release Dozer typically every 2 weeks and is available on our [releases page](https://github.com/getdozer/dozer/releases/latest). Currently, we publish a binary for Ubuntu 20.04 and also as a docker container.
+
+
+Please visit our [issues section](https://github.com/getdozer/dozer/issues) if you are having any trouble running the project.
+
+
+## Contributing
+Please refer to [Contributing](https://getdozer.io/docs/contributing/overview) for more details.
 
 
 ## Links
