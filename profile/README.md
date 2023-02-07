@@ -2,14 +2,15 @@
 
 ## 📚 Overview
 
-Dozer instantly deploys blazing-fast data APIs by extending your data stores with search, analytical and real-time functionality. 
+Dozer connects to your data sources, incrementally transforms the data and builds up the cache in real-time and provides high-performance gRPC and REST APIs. 
 
-At Dozer, we believe developers spend many valuable hours building core plumbing and infrastructure work and often integrate several products. We take an opinionated approach to solving data serving problems with a single product that offers end-to-end functionality all the way from the data sources to producing data APIs. 
-
-Dozer connects to your data sources, incrementally builds up the cache in real-time and provides high-performance APIs. Dozer takes an end-to-end approach, aiming to drastically lower the cost, complexity and effort involved in putting together the data infrastructure necessary to build data applications. Today developers have to integrate and maintain a variety of tools to achieve the same result. 
+Dozer takes an end-to-end approach, aiming to drastically lower the cost, complexity and effort involved in putting together the data infrastructure necessary to build data applications. Today developers have to integrate and maintain a variety of tools to achieve the same result. 
 
 Dozer maintains the data in a caching layer built on LMDB (Lightning Memory-Mapped Database) so users can immediately and efficiently query data in the form of gRPC and REST APIs. Dozer publishes data contracts and API documentation out of the box for the best developer experience. 
 
+Dozer is implemented fully in Rust for fast processing of data and is less resource intensive. 
+
+Check out our website and sign up for [Early Access](https:///getdozer.io) to our hosted service.
 ![Dozer Architecture](https://getdozer.io/img/dozer-binary.svg)
 
 Checkout our [Documentation](https://getdozer.io/docs/dozer) for more information.
