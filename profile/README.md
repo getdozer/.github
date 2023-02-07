@@ -24,9 +24,6 @@ Checkout our [Documentation](https://getdozer.io/docs/dozer) for more informatio
 - Built with **Rust** with performance and extensibility in mind.
 - OpenAPI documentation and protobuf-based data contracts are auto-generated.
 
-
-Read more about [Dozer here](https://getdozer.io/docs/dozer)
-
 Detailed [Architecture can be found here](https:///getdozer.io/docs/dozer/architecture). 
 
 ## Features
