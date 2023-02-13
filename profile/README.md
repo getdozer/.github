@@ -6,8 +6,6 @@ Dozer implements a Real-Time SQL Engine that connects to any of your data source
 
 Dozer is implemented fully in Rust for fast processing of data and is less resource intensive. 
 
-Dozer maintains the data in a caching layer built on LMDB (Lightning Memory-Mapped Database) so users can immediately and efficiently query data in the form of gRPC and REST APIs. Dozer publishes data contracts and API documentation out of the box for the best developer experience. 
-
 ![dozer](https://user-images.githubusercontent.com/981781/218511427-49be0bea-77b9-480b-bead-218c779c5514.png)
 
 
