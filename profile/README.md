@@ -58,10 +58,10 @@ Dozer can be run as a single process for simple applications or can be run in a 
 
 Dozer offers authorization functionality through JWT tokens. Refer to [API Security](https://getdozer.io/docs/reference/api/security) for more details.
 
-## Comparision
+## Comparison
 Dozer takes an opinionated and horizontal approach that cuts across different categories. In Dozer, you would find modules and functionalities comparable to streaming databases, caches, search engines and API generation tools.
 
-You can find comparision [documented here](https://getdozer.io/docs/dozer/comparision)
+You can find comparison [documented here](https://getdozer.io/docs/dozer/comparision)
 
 
 ## Releases
