@@ -77,6 +77,7 @@ Please refer to [Contributing](https://getdozer.io/docs/contributing/overview) f
 
 ## Links
 - [Docs](https://getdozer.io/docs/dozer)
-- [Quick Start](https://getdozer.io/docs/category/getting-started)
+- [Quick Start](https://getdozer.io/docs/getting_started)
 - [Contributing](https://getdozer.io/docs/contributing/overview)
 - [Issues](https://github.com/getdozer/dozer/issues)
+- [Samples](https://github.com/getdozer/dozer-samples/)
