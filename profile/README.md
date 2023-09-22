@@ -32,18 +32,14 @@ After processing, data is stored and indexed in a low-latency datastore (based o
 ## Repos
 Please find further instructions in the following repos. 
 
-Dozer core
-[getdozer/dozer](https://github.com/getdozer/dozer)
+Dozer core - [getdozer/dozer](https://github.com/getdozer/dozer)
 
-Dozer Samples 
-[getdozer/dozer-samples](https://github.com/getdozer/dozer-samples)
+Dozer Samples  - [getdozer/dozer-samples](https://github.com/getdozer/dozer-samples)
 
-Dozer JS libraries (JS, React, Vue etc)
-[Dozer JS](https://github.com/getdozer/dozer-js)
+Dozer JS libraries (JS, React, Vue etc) -[getdozer/dozer-js](https://github.com/getdozer/dozer-js)
 
 
-Dozer Python
-[Dozer JS](https://github.com/getdozer/dozer-python)
+Dozer Python - [getdozer/dozer-python](https://github.com/getdozer/dozer-python)
 
 ## Links
 [Docs](https://getdozer.io/docs/dozer)
